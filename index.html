@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Центр творчества</title>
+  <link rel="icon" href="images/icon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="apple-touch-icon" href="images/icon.png">
+  <link rel="stylesheet" href="bootstrap.css">
+  
+  <!-- Подключение стилей Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <style>
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-medium.ttf");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-semibold.ttf");
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-thin.ttf");
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Gilroy";
+      background-color: #EFEFEF;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="container-fuild">
+      <nav class="navbar d-flex flex-column navbar-expand-lg p-0">
+        <!-- fixed header -->
+        <div class="fixed-header w-100 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+          <div class="fixed-header-nav container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/location.svg" alt="location">
+              <div class="fw-medium fs-18">Маршала Катукова, д.8</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/call.svg" alt="call">
+              <div class="fw-medium fs-18">+7 (495) 750 05 00</div>
+            </div>
+            <button type="button" class="btn btn-custom fw-semibold show-before-phone" data-bs-toggle="modal" data-bs-target="#exampleModal" style="max-width: 193px; width: 100%;">
+              Заказать звонок
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div> 
+        </div>
+        <div>
+          <!-- hidden nav -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+                <img src="images/burger-close.svg" alt="cross">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="studios.html">Студии</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="organizatoram.html">Организаторам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="contacts.html">Контакты</a>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-custom fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 135px;">
+                    Заказать звонок
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+          <div class="collapse navbar-collapse nav-custom" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="studios.html">Студии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="organizatoram.html">Организаторам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- modal zvonok -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto d-flex flex-column align-items-center">
+          <button type="button" class="btn-close" style="border: none; background-color: transparent; margin: 0 0 0 auto;" data-bs-dismiss="modal" aria-label="Закрыть">
+            <img src="images/modal-close.svg" alt="close">
+          </button>
+          <div class="fs-30 fw-semibold mb-4">ЗАКАЗАТЬ ЗВОНОК</div>
+          <form class="was-validated d-flex gap-3 flex-column" id="myForm">
+            <div class="d-flex flex-column gap-3">
+              <input type="text" class="form-check-input fs-14 m-0" id="name" name="name" pattern=".{2,}" required placeholder="Ваше имя" aria-label="Username"/>
+              <input type="tel" class="form-check-input fs-14 m-0" id="tel" pattern="^\+?\d{10,}$" name="tel" required placeholder="Ваш телефон" aria-label="tel"/>
+              <div class="d-flex gap-4">
+                <button type="submit" class="btn btn-custom fs-14 fw-bold" style="max-width: 183px; width: 100%;">
+                  Отправить
+                </button>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="container-fluid container-main p-0 d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/main.png');">
+      <div class="d-flex flex-column align-items-center mx-auto my-auto">
+        <div class="mb-4">
+          <img src="images/icon.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain; max-width: 319px;">
+        </div>
+        <div class="fs-80 fw-semibold white-color mt-3">Движение. Творчество. Рост.</div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="p-0 mt-110 ">
+      <div class="fw-semibold fs-65 text-center mb-32">Афиша</div>
+      <div class="carousel-container position-relative">
+        <div class="owl-carousel owl-theme custom-carousel white-color">
+          <div class="item position-relative" style="max-width: max-content;">
+            <img src="images/carousel1.png" alt="carousel1" style="width: 100%; height: 100%; object-fit: contain; max-width: 492px;">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="pink-block fw-semibold fs-6">ул. Маршала Катукова, д. 8</div>
+              <div class="item-bottom">
+                <div class="fw-medium fs-5 mb-2">Летняя резиденция.</div>
+                <div class="fw-bold fs-33 mb-2">Детский концерт 8-10 лет</div>
+                <div class="pink-block fw-semibold fs-5">Смена: 20-24 августа</div>
+              </div>
+            </div>
+          </div>
+          <div class="item position-relative" style="max-width: max-content;">
+            <img src="images/carousel2.png" alt="carousel2" style="width: 100%; height: 100%; object-fit: contain; max-width: 492px;">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="pink-block fw-semibold fs-6">ул. Маршала Катукова, д. 8</div>
+              <div class="item-bottom">
+                <div class="fw-medium fs-5 mb-2">Выступление</div>
+                <div class="fw-bold fs-33 mb-2">“ЛЕБЕДИНОЕ ОЗЕРО”</div>
+                <div class="pink-block fw-semibold fs-5">Смена: 20-24 августа</div>
+              </div>
+            </div>
+          </div>
+          <div class="item position-relative" style="max-width: max-content;">
+            <img src="images/carousel1.png" alt="carousel1" style="width: 100%; height: 100%; object-fit: contain; max-width: 492px;">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="pink-block fw-semibold fs-6">ул. Маршала Катукова, д. 8</div>
+              <div class="item-bottom">
+                <div class="fw-medium fs-5 mb-2">Летняя резиденция.</div>
+                <div class="fw-bold fs-33 mb-2">Детский концерт 8-10 лет</div>
+                <div class="pink-block fw-semibold fs-5">Смена: 20-24 августа</div>
+              </div>
+            </div>
+          </div>
+          <div class="item position-relative" style="max-width: max-content;">
+            <img src="images/carousel2.png" alt="carousel2" style="width: 100%; height: 100%; object-fit: contain; max-width: 492px;">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="pink-block fw-semibold fs-6">ул. Маршала Катукова, д. 8</div>
+              <div class="item-bottom">
+                <div class="fw-medium fs-5 mb-2">Выступление</div>
+                <div class="fw-bold fs-33 mb-2">“ЛЕБЕДИНОЕ ОЗЕРО”</div>
+                <div class="pink-block fw-semibold fs-5">Смена: 20-24 августа</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-progress d-flex flex-column mx-auto">
+          <!-- Полоска прогресса -->
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+          <!-- Текст и кнопки -->
+          <div class="carousel-footer">
+            <p class="carousel-text fw-medium fs-4">Листать дальше</p>
+            <div class="carousel-buttons d-flex align-items-center">
+              <button class="carousel-prev">
+                <img src="images/arrow-l.svg" alt="arrow">
+              </button>
+              <button class="carousel-next">
+                <img src="images/arrow-r.svg" alt="arrow">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- directions -->
+    <div class="container p-0 d-flex flex-column mt-110">
+      <div class="fs-65 fw-semibold text-center mb-32">Студии</div>
+      <div class="d-flex align-items-center gap-20 flex-row">
+        <div class="d-flex flex-column">
+          <div class="position-relative">
+            <img src="images/dance.png" alt="dance" style="max-width: 600px; width: 100%; height: 100%; object-fit: contain;">
+            <div class="position-absolute blue-block fw-bold white-color text-uppercase">Для взрослых</div>
+          </div>
+          <a href="for_adults.html" class="btn-custom white-color text-uppercase  text-decoration-none fw-semibold">подробнее</a>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="position-relative">
+            <img src="images/for-kids-girl.png" alt="girl" style="max-width: 600px; width: 100%; height: 100%; object-fit: contain;">
+            <div class="position-absolute blue-block fw-bold white-color text-uppercase">Для детей</div>
+          </div>
+          <a href="for_kids.html" class="btn-custom white-color text-uppercase text-decoration-none fw-semibold">подробнее</a>
+        </div>
+      </div>
+    </div>
+    <!-- install -->
+    <div class="d-flex container container-instal position-relative align-items-center flex-row">
+      <div class="d-flex flex-column">
+        <div class="fw-semibold fs-45 mb-4">Скачайте приложение для посетителей КЦ “Строгино”</div>
+        <div class="d-flex gap-3">
+          <img src="images/google-play.svg" class="instal-img" alt="playmarket">
+          <img src="images/appstore.svg" class="instal-img" alt="appstore">
+        </div>
+      </div>
+      <div class="position-absolute show-before-phone">
+        <img src="images/fon.png" alt="woman and phone" style="width: 100%; height: 100%; max-width: 627px;">
+      </div>
+      <div class="position-absolute hidden">
+        <img src="images/fon2.png" alt="woman and phone" style="width: 100%; height: 100%; max-width: 300px;">
+      </div>
+    </div>
+    <!-- accordion -->
+    <div class="container d-flex flex-column mt-110">
+      <div class="fw-semibold fs-65 mb-32 text-center">Часто задаваемые вопросы</div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Как зарегистрироваться в Личном кабинете и пользоваться им
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 940px;">
+                <p>При регистрации указываете номер телефона, пароль и ставите галочку о согласии с обработкой персональных данных. Далее придет код подтверждения в WhatsApp, который необходимо ввести.</p>
+                <p>В Личном кабинете в разделе «Профиль» можно выбрать приоритетный клуб.</p>
+                <p>В разделе «Главная» находятся все приобретенные услуги.</p>
+                <p>В «Занятия» указана история посещений.</p>
+                <p>Раздел «Расписание» имеет функционал приобретения и записи клиентов.</p>
+                <p>Также услуги можно приобрести в разделе «Магазин», но без наличия записи.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Какие типы услуг есть
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 707px;">
+                <p class="mb-32">В Культурном центре «Строгино» существует групповые и индивидуальные занятия.</p>
+                <p class="text-decoration-underline mb-3">Список услуг групповых занятий:</p>
+                <p>· <span class="fw-semibold">Пробное занятия.</span> Включает в себя одноразовое платное или бесплатное посещение без возможности дальнейшего использования.</p>
+                <p>· <span class="fw-semibold">Разовые занятия.</span> Включают в себя одноразовое платное посещение на определенную дату.</p>
+                <p>· <span class="fw-semibold">Абонемент.</span> Включает в себя ограниченное количество занятий на протяжении 40 дней с момента первого посещения.</p>
+                <p class="mb-32">· <span class="fw-semibold">Мастер классы.</span> Включают в себя одноразовое посещение на определенную дату.</p>
+                <p class="text-decoration-underline mb-3">Список услуг индивидуальных занятий:</p>
+                <p>· <span class="fw-semibold">Разовые занятия.</span> Включают в себя одноразовое платное посещение на определенную дату.</p>
+                <p>· <span class="fw-semibold">Абонемент.</span> Включает в себя ограниченное количество занятий на протяжении 40 дней с момента первого посещения.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Как записаться на пробное занятие
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 856px;">
+                Записаться на пробное занятие можно через раздел «Расписание», либо в «Магазине», выбрав необходимую услугу с пробным занятием.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Как приобрести услугу
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 856px;">
+                Услугу приобрести могут только авторизованные клиенты через «Расписание» или «Магазин». Также можно воспользоваться «Быстрой покупкой» на страницах каждой студии переходя по ссылкам в «Тарифах».
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Какие способы оплаты
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 615px;">
+                Оплатить услуги можно через сайт, мобильное приложение или на месте в отделе продаж Культурных центров «Строгино».
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Как пользоваться магазином
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 856px;">
+                В магазине можно приобрести услуги по прайсу Культурного центра «Строгино». Чтобы приобрести услуги через магазин, необходимо в Личном кабинете перейти в данный раздел и выбрать необходимую услугу из расположенных в каталогах.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Как пользоваться расписанием
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 1028px;">
+                <p class="fw-semibold">В разделе «Расписание» можно отсортировать занятия:</p>
+                <p>· по клубам Культурного центра;</p>
+                <p>· по времени суток;</p>
+                <p>· по занятиям;</p>
+                <p>· по педагогу;</p>
+                <p class="mb-32">· по группам (каталогам).</p>
+                <p>Отобразить список занятий также можно на неделю, или на определенный день. Расположено в правом верхнем углу расписания.</p>
+                <p class="mb-32">Выбирая необходимое занятие, попадаете в раздел предварительной покупки и записи. Здесь Вы можете ознакомится с информацией о преподавателе, о самом занятии и сколько свободных мест осталось. Нажимая кнопку «Купить», попадаете на предварительную покупку пакета услуг по данному занятию. Далее выбираете нужную услугу на приобретение.</p>
+                <p class="text-decoration-underline">Возможные ошибки:</p>
+                <p>«В данный промежуток времени вы уже записаны». Это означает, что у вас есть предварительная запись на другие услуги в данном промежутке времени. Чтобы увидеть, необходимо обновить страницу и на них будет синий «флажок». Предварительная запись пропадает в течении 5 минут.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed fw-semibold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Как составить расписание и записаться на занятия
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+            <div class="accordion-body mt-2 fs-5">
+              <div style="max-width: 1045px;">
+                <p>Если у вас уже есть купленный абонемент, то Вы автоматически записываетесь на все занятия. К Вам придет сообщение по WhatsApp. Отредактировать его можно через Личный кабинет (в разделе «Занятия» и/или приложение клиента («Мои занятия») и нажимаете «Отменить запись».</p>
+                <p>Чтобы записаться на занятия у Вас должна быть оплачена услуга. Если у клиента имеется задолженность, то найти информацию можно в Личном кабинете, раздел «Главное». Для записи на занятия перейдите в раздел «Расписание». Вместо «Купить» будет указано «Бронирование» и приобретенная услуга.</p>
+                <p>Для бюджетных групп создана функция отправки заявок. Если бюджетная группа открыта, то на странице сайта группы Вы можете оставить заявку на запись в бюджетную группу. После одобрения с Вами свяжутся сотрудники Культурного центра «Строгино» для подписания договора.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid mt-110" style="background-color: #010938; color: #fff;">
+      <div class="container container-footer d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="d-flex flex-column gap-20 ">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div style="max-width: 286px;">© 2018 – 2022, Культурный центр «Строгино» – учреждение культуры города Москва</div>
+            <div class="d-flex flex-column">
+              <div class="text-uppercase">мы работаем</div>
+              <div>с 10:00 до 22:00 без выходных</div>
+            </div>
+            <div class="d-flex gap-3">
+              <div>
+                <img src="images/vk.svg" alt="vk">
+              </div>
+              <div>
+                <img src="images/tg.svg" alt="tg">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="about_center.html" class="nav-link white-color">О центре</a>
+            <a href="prostranstva.html" class="nav-link white-color">Пространства</a>
+            <a href="studios.html" class="nav-link white-color">Студии</a>
+            <a href="#" class="nav-link white-color">Афиша</a>
+            <a href="#" class="nav-link white-color">Галерея</a>
+            <a href="contacts.html" class="nav-link white-color">Контакты</a>
+            <a href="#" class="nav-link white-color">Оплата на сайте</a>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="#" class="nav-link white-color">Документы</a>
+            <a href="#" class="nav-link white-color">Вакансии</a>
+            <a href="#" class="nav-link white-color">Запись к директору</a>
+            <a href="#" class="nav-link white-color">Независимая оценка</a>
+            <a href="#" class="nav-link white-color">Партнеры</a>
+            <a href="#" class="nav-link white-color">Все новости</a>
+            <a href="#" class="nav-link white-color">Аренда помещений</a>
+          </div>
+          <div class="d-flex flex-column justify-content-between form-container" style="gap: 10px;">
+            <div class="text-uppercase fw-semibold fs-18">напишите нам</div>
+            <form class="was-validated" id="myForm2">
+              <div class="d-flex flex-column" style="gap: 10px;">
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="name2" name="name2" required placeholder="Ваше имя" aria-label="Username"/>
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="text2" name="text2" required placeholder="Ваш телефон или email" aria-label="text"/>
+                <textarea name="message" id="message" style="max-width: 289px;" placeholder="Ваше сообщение"></textarea>
+                <div class="d-flex gap-3">
+                  <input type="checkbox" name="checkbox2" id="checkbox2" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+                <button type="submit" class="btn btn-custom fs-6 fw-semibold" style="max-width: 134px; width: 100%;">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex gap-50 show-before-phone">
+          <div class="fs-22 fw-semibold">Наши партнеры</div>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#">
+              <img src="images/ostankino.svg" alt="ostankino">
+            </a>
+            <a href="#">
+              <img src="images/pushkinskaya-karta.svg" alt="pushkinskaya karta">
+            </a>
+            <a href="#">
+              <img src="images/dep-cultura.svg" alt="departament cultura">
+            </a>
+            <a href="#">
+              <img src="images/mos-ru.svg" alt="mos-ru">
+            </a>
+            <a href="#">
+              <img src="images/mos-produce-center.svg" alt="mos-produce-center">
+            </a>
+            <a href="#">
+              <img src="images/mos-razvitie.svg" alt="mos-razvitie">
+            </a>
+            <a href="#">
+              <img src="images/mos-concert.svg" alt="mos-concert">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const accordionItems = document.querySelectorAll(".accordion-item");
+
+      accordionItems.forEach(item => {
+        const header = item.querySelector(".accordion-header");
+
+        header.addEventListener("click", () => {
+          // Закрыть все элементы
+          accordionItems.forEach(i => {
+            if (i !== item) {
+              i.classList.remove("active");
+            }
+          });
+
+          // Переключить текущий элемент
+          item.classList.toggle("active");
+        });
+      });
+    });
+
+
+    $(document).ready(function() {
+      var $carousel = $('.owl-carousel');
+      var $progressBar = $('.progress-bar');
+      var progressStep = 25; // Шаг прогресса в процентах (4 шага по 25% до 100%)
+      var currentProgress = 0; // Текущий прогресс в процентах
+      
+      $carousel.owlCarousel({
+        loop: true,
+        nav: false,
+        autoWidth: false,
+        center: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1024: {
+            items: 3
+          },
+          1440: {
+            items: 4
+          }
+        },
+        onTranslated: updateProgressBar
+      });
+
+      // Функции для стрелок
+      $('.carousel-prev').click(function() {
+        $carousel.trigger('prev.owl.carousel');
+      });
+
+      $('.carousel-next').click(function() {
+        $carousel.trigger('next.owl.carousel');
+      });
+
+      function updateProgressBar(event) {
+        // Увеличиваем прогресс на 25% при каждом переключении
+        currentProgress += progressStep;
+
+        // Сбрасываем до 0%, если прогресс достигает или превышает 100%
+        if (currentProgress > 100) {
+          currentProgress = 25; // Начинаем новый цикл на 25%
+        }
+
+        // Устанавливаем ширину прогресс-бара
+        $progressBar.css("width", currentProgress + "%");
+      }
+
+    });
+
+
+    const headerHeight = document.querySelector('.fixed-header').offsetHeight; // Укажите селектор шапки
+    const navbar = document.querySelector('.nav-custom'); // Укажите селектор панели навигации
+
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Проверяем, что скролл ниже шапки
+      if (scrollTop > headerHeight) {
+        if (scrollTop > lastScrollTop) {
+          // Скролл вниз — скрываем панель
+          navbar.style.top = `-${navbar.offsetHeight}px`; // Скрываем, задавая отрицательное значение высоты панели
+        } else {
+          // Скролл вверх — показываем панель
+          navbar.style.top = `${headerHeight}px`; // Задаем отступ в высоту шапки
+        }
+      } else {
+        // Если мы над шапкой, панель всегда будет на своем месте под шапкой
+        navbar.style.top = `${headerHeight}px`;
+      }
+
+      lastScrollTop = scrollTop;
+    });
+
+    document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('myForm').reset();
+    });
+    
+  </script>
+</body>
+</html>

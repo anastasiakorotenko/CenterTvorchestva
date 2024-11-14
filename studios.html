@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Центр творчества</title>
+  <link rel="icon" href="images/icon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="apple-touch-icon" href="images/icon.png">
+  <link rel="stylesheet" href="bootstrap.css">
+  
+  <!-- Подключение стилей Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <style>
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-medium.ttf");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-semibold.ttf");
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-thin.ttf");
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Gilroy";
+      background-color: #EFEFEF;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="container-fuild">
+      <nav class="navbar d-flex flex-column navbar-expand-lg p-0">
+        <!-- fixed header -->
+        <div class="fixed-header w-100 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+          <div class="fixed-header-nav container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/location.svg" alt="location">
+              <div class="fw-medium fs-18">Маршала Катукова, д.8</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/call.svg" alt="call">
+              <div class="fw-medium fs-18">+7 (495) 750 05 00</div>
+            </div>
+            <button type="button" class="btn btn-custom fw-semibold show-before-phone" data-bs-toggle="modal" data-bs-target="#exampleModal" style="max-width: 193px; width: 100%;">Заказать звонок</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div> 
+        </div>
+        <div>
+          <!-- hidden nav -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+                <img src="images/burger-close.svg" alt="cross">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="studios.html">Студии</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="organizatoram.html">Организаторам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="contacts.html">Контакты</a>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-custom fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 135px;">
+                    Заказать звонок
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+          <div class="collapse navbar-collapse nav-custom" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="studios.html">Студии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="organizatoram.html">Организаторам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- modal zvonok -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto d-flex flex-column align-items-center">
+          <button type="button" class="btn-close" style="border: none; background-color: transparent; margin: 0 0 0 auto;" data-bs-dismiss="modal" aria-label="Закрыть">
+            <img src="images/modal-close.svg" alt="close">
+          </button>
+          <div class="fs-30 fw-semibold mb-4">ЗАКАЗАТЬ ЗВОНОК</div>
+          <form class="was-validated d-flex gap-3 flex-column" id="myForm">
+            <div class="d-flex flex-column gap-3">
+              <input type="text" class="form-check-input fs-14 m-0" id="name" name="name" pattern=".{2,}" required placeholder="Ваше имя" aria-label="Username"/>
+              <input type="tel" class="form-check-input fs-14 m-0" id="tel" pattern="^\+?\d{10,}$" name="tel" required placeholder="Ваш телефон" aria-label="tel"/>
+              <div class="d-flex gap-4">
+                <button type="submit" class="btn btn-custom fs-14 fw-bold" style="max-width: 183px; width: 100%;">
+                  Отправить
+                </button>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- studios -->
+    <div class="container p-0 d-flex flex-column container-hat">
+      <div class="fs-65 fw-semibold text-center mb-32">Студии</div>
+      <div class="d-flex align-items-center gap-20 flex-row">
+        <div class="d-flex flex-column">
+          <div class="position-relative">
+            <img src="images/dance.png" alt="dance" style="max-width: 600px; width: 100%; height: 100%; object-fit: contain;">
+            <div class="position-absolute blue-block fw-bold white-color text-uppercase">Для взрослых</div>
+          </div>
+          <a href="for_adults.html" class="btn-custom white-color text-uppercase  text-decoration-none fw-semibold">подробнее</a>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="position-relative">
+            <img src="images/for-kids-girl.png" alt="girl" style="max-width: 600px; width: 100%; height: 100%; object-fit: contain;">
+            <div class="position-absolute blue-block fw-bold white-color text-uppercase">Для детей</div>
+          </div>
+          <a href="for_kids.html" class="btn-custom white-color text-uppercase text-decoration-none fw-semibold">подробнее</a>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid mt-110" style="background-color: #010938; color: #fff;">
+      <div class="container container-footer d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="d-flex flex-column gap-20 ">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div style="max-width: 286px;">© 2018 – 2022, Культурный центр «Строгино» – учреждение культуры города Москва</div>
+            <div class="d-flex flex-column">
+              <div class="text-uppercase">мы работаем</div>
+              <div>с 10:00 до 22:00 без выходных</div>
+            </div>
+            <div class="d-flex gap-3">
+              <div>
+                <img src="images/vk.svg" alt="vk">
+              </div>
+              <div>
+                <img src="images/tg.svg" alt="tg">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="about_center.html" class="nav-link white-color">О центре</a>
+            <a href="prostranstva.html" class="nav-link white-color">Пространства</a>
+            <a href="studios.html" class="nav-link white-color">Студии</a>
+            <a href="#" class="nav-link white-color">Афиша</a>
+            <a href="#" class="nav-link white-color">Галерея</a>
+            <a href="contacts.html" class="nav-link white-color">Контакты</a>
+            <a href="#" class="nav-link white-color">Оплата на сайте</a>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="#" class="nav-link white-color">Документы</a>
+            <a href="#" class="nav-link white-color">Вакансии</a>
+            <a href="#" class="nav-link white-color">Запись к директору</a>
+            <a href="#" class="nav-link white-color">Независимая оценка</a>
+            <a href="#" class="nav-link white-color">Партнеры</a>
+            <a href="#" class="nav-link white-color">Все новости</a>
+            <a href="#" class="nav-link white-color">Аренда помещений</a>
+          </div>
+          <div class="d-flex flex-column justify-content-between form-container" style="gap: 10px;">
+            <div class="text-uppercase fw-semibold fs-18">напишите нам</div>
+            <form class="was-validated" id="myForm2">
+              <div class="d-flex flex-column" style="gap: 10px;">
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="name2" name="name2" required placeholder="Ваше имя" aria-label="Username"/>
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="text2" name="text2" required placeholder="Ваш телефон или email" aria-label="text"/>
+                <textarea name="message" id="message" style="max-width: 289px;" placeholder="Ваше сообщение"></textarea>
+                <div class="d-flex gap-3">
+                  <input type="checkbox" name="checkbox2" id="checkbox2" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+                <button type="submit" class="btn btn-custom fs-6 fw-semibold" style="max-width: 134px; width: 100%;">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex gap-50 show-before-phone">
+          <div class="fs-22 fw-semibold">Наши партнеры</div>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#">
+              <img src="images/ostankino.svg" alt="ostankino">
+            </a>
+            <a href="#">
+              <img src="images/pushkinskaya-karta.svg" alt="pushkinskaya karta">
+            </a>
+            <a href="#">
+              <img src="images/dep-cultura.svg" alt="departament cultura">
+            </a>
+            <a href="#">
+              <img src="images/mos-ru.svg" alt="mos-ru">
+            </a>
+            <a href="#">
+              <img src="images/mos-produce-center.svg" alt="mos-produce-center">
+            </a>
+            <a href="#">
+              <img src="images/mos-razvitie.svg" alt="mos-razvitie">
+            </a>
+            <a href="#">
+              <img src="images/mos-concert.svg" alt="mos-concert">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const headerHeight = document.querySelector('.fixed-header').offsetHeight; // Укажите селектор шапки
+    const navbar = document.querySelector('.nav-custom'); // Укажите селектор панели навигации
+
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Проверяем, что скролл ниже шапки
+      if (scrollTop > headerHeight) {
+        if (scrollTop > lastScrollTop) {
+          // Скролл вниз — скрываем панель
+          navbar.style.top = `-${navbar.offsetHeight}px`; // Скрываем, задавая отрицательное значение высоты панели
+        } else {
+          // Скролл вверх — показываем панель
+          navbar.style.top = `${headerHeight}px`; // Задаем отступ в высоту шапки
+        }
+      } else {
+        // Если мы над шапкой, панель всегда будет на своем месте под шапкой
+        navbar.style.top = `${headerHeight}px`;
+      }
+
+      lastScrollTop = scrollTop;
+    });
+
+    document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('myForm').reset();
+    });
+    
+  </script>
+</body>
+</html>
