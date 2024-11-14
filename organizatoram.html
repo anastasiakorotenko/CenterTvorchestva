@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Центр творчества</title>
+  <link rel="icon" href="images/icon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="apple-touch-icon" href="images/icon.png">
+  <link rel="stylesheet" href="bootstrap.css">
+  
+  <!-- Подключение стилей Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <style>
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-medium.ttf");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-semibold.ttf");
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-thin.ttf");
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Gilroy";
+      background-color: #02061D;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="container-fuild">
+      <nav class="navbar d-flex flex-column navbar-expand-lg p-0">
+        <!-- fixed header -->
+        <div class="fixed-header w-100 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+          <div class="fixed-header-nav container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/location.svg" alt="location">
+              <div class="fw-medium fs-18">Маршала Катукова, д.8</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/call.svg" alt="call">
+              <div class="fw-medium fs-18">+7 (495) 750 05 00</div>
+            </div>
+            <button type="button" class="btn btn-custom fw-semibold show-before-phone" data-bs-toggle="modal" data-bs-target="#exampleModal" style="max-width: 193px; width: 100%;">Заказать звонок</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div> 
+        </div>
+        <div>
+          <!-- hidden nav -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+                <img src="images/burger-close.svg" alt="cross">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="studios.html">Студии</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="#">Организаторам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="contacts.html">Контакты</a>
+                </li>
+                <button type="button" class="btn btn-custom fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 135px;">
+                  Заказать звонок
+                </button>
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+          <div class="collapse navbar-collapse nav-custom" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="studios.html">Студии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="#">Организаторам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- modal zvonok -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto d-flex flex-column align-items-center">
+          <button type="button" class="btn-close" style="border: none; background-color: transparent; margin: 0 0 0 auto;" data-bs-dismiss="modal" aria-label="Закрыть">
+            <img src="images/modal-close.svg" alt="close">
+          </button>
+          <div class="fs-30 fw-semibold mb-4">ЗАКАЗАТЬ ЗВОНОК</div>
+          <form class="was-validated d-flex gap-3 flex-column" id="myForm">
+            <div class="d-flex flex-column gap-3">
+              <input type="text" class="form-check-input fs-14 m-0" id="name" name="name" pattern=".{2,}" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+              <input type="tel" class="form-check-input fs-14 m-0" id="tel" pattern="^\+?\d{10,}$" name="tel" required placeholder="Ваш телефон" aria-label="tel" aria-describedby="tel"/>
+              <div class="d-flex gap-4">
+                <button type="submit" class="btn btn-custom fs-14 fw-bold" style="max-width: 183px; width: 100%;">
+                  Отправить
+                </button>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="container-fluid container-main p-0 d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/fon-orzanizatoram.png');">
+      <div class="container gap-5 d-flex flex-column align-items-center mx-auto my-auto p-0" style="max-width: 1070px;">
+        <div>
+          <img src="images/logo-without-text.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain; max-width: 770px;">
+        </div>
+        <div class="d-flex flex-column gap-3 white-color">
+          <div class="fs-80 fw-semibold text-center">Культурный центр Строгино</div>
+          <div class="fs-22 fw-semibold text-center">На базе пространств Культурного центра Строгино Вы сможете организовать  различные  культурно-массовые  мероприятия, как разового характера, так и на регулярной основе</div>
+        </div>
+      </div>
+    </div>
+    <!-- modal arenda1 -->
+    <div class="modal fade" id="exampleModalArenda1" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto d-flex flex-column align-items-center">
+          <button type="button" class="btn-close" style="border: none; background-color: transparent; margin: 0 0 0 auto;" data-bs-dismiss="modal" aria-label="Закрыть">
+            <img src="images/modal-close.svg" alt="close">
+          </button>
+          <div class="fs-30 fw-semibold mb-4"><span style="color: #CC0EF1;">КОНСУЛЬТАЦИЯ</span> НА РАЗОВОЕ МЕРОПРИЯТИЕ</div>
+          <form class="was-validated d-flex gap-3 flex-column" id="myFormArenda1">
+            <div class="d-flex flex-column gap-3">
+              <input type="text" class="form-check-input fs-14 m-0" id="name" name="name" pattern=".{2,}" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+              <input type="tel" class="form-check-input fs-14 m-0" id="tel" pattern="^\+?\d{10,}$" name="tel" required placeholder="Ваш телефон" aria-label="tel" aria-describedby="tel"/>
+              <div class="d-flex flex-column">
+                <label for="comment" class="form-label fs-18 fw-medium" style="line-height: 20px;">Вкратце опишите Вашу задачу, и с Вами свяжется ответственный специалист, проконсультирует п о всем вопросам</label>
+                <textarea name="comment" id="comment" style="max-height: 146px;"></textarea>
+              </div>
+              <div class="d-flex gap-4">
+                <button type="submit" class="btn btn-custom fs-14 fw-bold" style="max-width: 183px; width: 100%;">
+                  Отправить
+                </button>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- modal arenda2 -->
+    <div class="modal fade" id="exampleModalArenda2" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto d-flex flex-column align-items-center">
+          <button type="button" class="btn-close" style="border: none; background-color: transparent; margin: 0 0 0 auto;" data-bs-dismiss="modal" aria-label="Закрыть">
+            <img src="images/modal-close.svg" alt="close">
+          </button>
+          <div class="fs-30 fw-semibold mb-4"><span style="color: #CC0EF1;">КОНСУЛЬТАЦИЯ</span> НА ОРГАНИЗАЦИЮ КРУЖКА</div>
+          <form class="was-validated d-flex gap-3 flex-column" id="myFormArenda2">
+            <div class="d-flex flex-column gap-3">
+              <input type="text" class="form-check-input fs-14 m-0" id="name" name="name" pattern=".{2,}" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+              <input type="tel" class="form-check-input fs-14 m-0" id="tel" pattern="^\+?\d{10,}$" name="tel" required placeholder="Ваш телефон" aria-label="tel" aria-describedby="tel"/>
+              <div class="d-flex flex-column">
+                <label for="comment" class="form-label fs-18 fw-medium" style="line-height: 20px;">Вкратце опишите Вашу задачу, и с Вами свяжется ответственный специалист, проконсультирует п о всем вопросам</label>
+                <textarea name="comment" id="comment" style="max-height: 146px;"></textarea>
+              </div>
+              <div class="d-flex gap-4">
+                <button type="submit" class="btn btn-custom fs-14 fw-bold" style="max-width: 183px; width: 100%;">
+                  Отправить
+                </button>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- choose -->
+    <div class="container container-choose d-flex flex-column align-items-center p-0 mt-110 white-color gap-50">
+      <div class="fs-65 fw-semibold">Выберите направление</div>
+      <div class="row flex-row gap-4">
+        <div class="col d-flex flex-column">
+          <div class="text-uppercase fs-22 fw-semibold">Аренда помещения для организации кружка на постоянной основе</div>
+          <button type="button" class="btn-custom white-color text-uppercase m-0 fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModalArenda2">консультация</button>
+        </div>
+        <div class="col d-flex flex-column">
+          <div class="text-uppercase fs-22 fw-semibold">Аренда помещения для организации разового мероприятия</div>
+          <button type="button" class="btn-custom white-color text-uppercase m-0 fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModalArenda1">консультация</button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid mt-110" style="background-color: #eeeeee;">
+      <div class="container container-footer d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="d-flex flex-column gap-20 ">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div style="max-width: 286px;">© 2018 – 2022, Культурный центр «Строгино» – учреждение культуры города Москва</div>
+            <div class="d-flex flex-column">
+              <div class="text-uppercase">мы работаем</div>
+              <div>с 10:00 до 22:00 без выходных</div>
+            </div>
+            <div class="d-flex gap-3">
+              <div>
+                <img src="images/vk-dark.svg" alt="vk">
+              </div>
+              <div>
+                <img src="images/tg-dark.svg" alt="tg">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="about_center.html" class="nav-link">О центре</a>
+            <a href="prostranstva.html" class="nav-link">Пространства</a>
+            <a href="studios.html" class="nav-link">Студии</a>
+            <a href="#" class="nav-link">Афиша</a>
+            <a href="#" class="nav-link">Галерея</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <a href="#" class="nav-link">Оплата на сайте</a>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="#" class="nav-link">Документы</a>
+            <a href="#" class="nav-link">Вакансии</a>
+            <a href="#" class="nav-link">Запись к директору</a>
+            <a href="#" class="nav-link">Независимая оценка</a>
+            <a href="#" class="nav-link">Партнеры</a>
+            <a href="#" class="nav-link">Все новости</a>
+            <a href="#" class="nav-link">Аренда помещений</a>
+          </div>
+          <div class="d-flex flex-column justify-content-between form-container" style="gap: 10px;">
+            <div class="text-uppercase fw-semibold fs-18">напишите нам</div>
+            <form class="was-validated" id="myForm">
+              <div class="d-flex flex-column" style="gap: 10px;">
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="name" name="name" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="text" name="text" required placeholder="Ваш телефон или email" aria-label="text" aria-describedby="text"/>
+                <textarea name="message" id="message" style="max-width: 289px;" placeholder="Ваше сообщение"></textarea>
+                <div class="d-flex gap-3">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+                <button type="submit" class="btn btn-custom fs-6 fw-semibold" style="max-width: 134px; width: 100%;">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex gap-50 show-before-phone">
+          <div class="fs-22 fw-semibold">Наши партнеры</div>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#">
+              <img src="images/ostankino-light.svg" alt="ostankino">
+            </a>
+            <a href="#">
+              <img src="images/pk-light.svg" alt="pushkinskaya karta">
+            </a>
+            <a href="#">
+              <img src="images/dep-cult-light.svg" alt="departament cultura">
+            </a>
+            <a href="#">
+              <img src="images/mos-ru-light.svg" alt="mos-ru">
+            </a>
+            <a href="#">
+              <img src="images/mpc-light.svg" alt="mos-produce-center">
+            </a>
+            <a href="#">
+              <img src="images/mos-razv-light.svg" alt="mos-razvitie">
+            </a>
+            <a href="#">
+              <img src="images/mos-concert-light.svg" alt="mos-concert">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const headerHeight = document.querySelector('.fixed-header').offsetHeight; // Укажите селектор шапки
+    const navbar = document.querySelector('.nav-custom'); // Укажите селектор панели навигации
+
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Проверяем, что скролл ниже шапки
+      if (scrollTop > headerHeight) {
+        if (scrollTop > lastScrollTop) {
+          // Скролл вниз — скрываем панель
+          navbar.style.top = `-${navbar.offsetHeight}px`; // Скрываем, задавая отрицательное значение высоты панели
+        } else {
+          // Скролл вверх — показываем панель
+          navbar.style.top = `${headerHeight}px`; // Задаем отступ в высоту шапки
+        }
+      } else {
+        // Если мы над шапкой, панель всегда будет на своем месте под шапкой
+        navbar.style.top = `${headerHeight}px`;
+      }
+
+      lastScrollTop = scrollTop;
+    });
+
+    // Очищаем форму при закрытии модального окна
+    document.getElementById('exampleModalArenda1').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('myFormArenda1').reset();
+    });
+    document.getElementById('exampleModalArenda2').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('myFormArenda2').reset();
+    });
+    document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('myForm').reset();
+    });
+    
+  </script>
+</body>
+</html>

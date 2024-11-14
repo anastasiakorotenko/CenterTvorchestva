@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Центр творчества</title>
+  <link rel="icon" href="images/icon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="apple-touch-icon" href="images/icon.png">
+  <link rel="stylesheet" href="bootstrap.css">
+  
+  <!-- Подключение стилей Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <style>
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-medium.ttf");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-semibold.ttf");
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Gilroy";
+      src: url("fonts/gilroy-thin.ttf");
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Gilroy";
+      background-color: #02061D;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="container-fuild">
+      <nav class="navbar d-flex flex-column navbar-expand-lg p-0">
+        <!-- fixed header -->
+        <div class="fixed-header w-100 d-flex align-items-center justify-content-center" style="background-color: #fff;">
+          <div class="fixed-header-nav container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/location.svg" alt="location">
+              <div class="fw-medium fs-18">Маршала Катукова, д.8</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 show-before-phone">
+              <img src="images/call.svg" alt="call">
+              <div class="fw-medium fs-18">+7 (495) 750 05 00</div>
+            </div>
+            <button type="button" class="btn btn-custom fw-semibold show-before-phone" data-bs-toggle="modal" data-bs-target="#exampleModal" style="max-width: 193px; width: 100%;">Заказать звонок</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div> 
+        </div>
+        <div>
+          <!-- hidden nav -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+                <img src="images/burger-close.svg" alt="cross">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="studios.html">Студии</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="organizatoram.html">Организаторам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-18 underline-hover fw-semibold" aria-current="page" href="#">Контакты</a>
+                </li>
+                <button type="button" class="btn btn-custom fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 135px;">
+                  Заказать звонок
+                </button>
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+          <div class="collapse navbar-collapse nav-custom" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="about_center.html">О центре</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="studios.html">Студии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="prostranstva.html">Пространства</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="organizatoram.html">Организаторам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="arenda.html">Аренда</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline-hover fs-18 fw-semibold" aria-current="page" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- modal zvonok -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto d-flex flex-column align-items-center">
+          <button type="button" class="btn-close" style="border: none; background-color: transparent; margin: 0 0 0 auto;" data-bs-dismiss="modal" aria-label="Закрыть">
+            <img src="images/modal-close.svg" alt="close">
+          </button>
+          <div class="fs-30 fw-semibold mb-4">ЗАКАЗАТЬ ЗВОНОК</div>
+          <form class="was-validated d-flex gap-3 flex-column" id="myForm">
+            <div class="d-flex flex-column gap-3">
+              <input type="text" class="form-check-input fs-14 m-0" id="name" name="name" pattern=".{2,}" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+              <input type="tel" class="form-check-input fs-14 m-0" id="tel" pattern="^\+?\d{10,}$" name="tel" required placeholder="Ваш телефон" aria-label="tel" aria-describedby="tel"/>
+              <div class="d-flex gap-4">
+                <button type="submit" class="btn btn-custom fs-14 fw-bold" style="max-width: 183px; width: 100%;">
+                  Отправить
+                </button>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- contacts -->
+    <div class="container container-contacts d-flex align-items-center p-0 gap-5 white-color flex-row">
+      <div>
+        <img src="images/icon.svg" alt="icon" style="width: 100%; height: 100%; object-fit: contain; max-width: 187px;">
+      </div>
+      <div class="text-uppercase fw-semibold fs-65">Контакты</div>
+    </div>
+    <!-- address -->
+    <div class="container container-address d-flex gap-4 justify-content-between mt-110 p-0 flex-row" style="color: #02061D; line-height: 38.94px;">
+      <div class="d-flex flex-column gap-3" style="max-width: 496px; border-radius: 15px; background-color: #fff; padding: 31px 37px;">
+        <div class="fw-bold fs-30">Маршала Катукова, 8</div>
+        <div class="fs-23 fw-medium"><span class="fw-bold">Фактический адрес:</span> 123592, г. Москва, ул. Маршала Катукова, д. 8</div>
+        <div class="fs-23 fw-medium"><span class="fw-bold">Электронная почта:</span> info@stroginocc.ru</div>
+        <div class="fs-23 fw-medium"><span class="fw-bold">Телефон:</span> +7 (495) 750-05-00</div>
+        <a class="fs-5 fw-medium" style="color: #02061D;">Договор публичной оферты</a>
+      </div>
+      <div class="d-flex flex-column box-director" style="background-color: #fff; border-radius: 15px; padding: 28px 49px 80px;">
+        <div class="fw-semibold fs-30 mb-3" style="line-height: 50.79px;"><span class="fw-bold">Директор —</span> Чеглов Артем Александрович</div>
+        <div class="fs-23 d-flex gap-5 mb-5 flex-row">
+          <div class="fw-bold">Приемные дни: ПН/ВТ</div>
+          <div class="fw-medium">12:00 – 14:00</div>
+        </div>
+        <div class="fs-23 d-flex justify-content-between flex-row">
+          <div class="fw-bold fs-30" style="line-height: 33.39px; max-width: 207px;">Режим работы центра:</div>
+          <div class="fw-bold d-flex flex-column">
+            <div>ПН/ВТ/ПТ</div>
+            <div>СР/ЧТ/СБ/ВС</div>
+          </div>
+          <div class="d-flex flex-column fw-medium">
+            <div>09:00 – 22:00</div>
+            <div>10.00 - 22.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- requisites -->
+    <div class="container container-requisites p-0 d-flex flex-column white-color mt-110">
+      <div class="fw-bold fs-30">Реквизиты:</div>
+      <div class="d-flex flex-row fw-medium fs-23 justify-content-between gap-50" style="line-height: 39.74px;">
+        <div class="d-flex flex-column" style="max-width: 571px; width: 100%;">
+          <div>Государственное бюджетное учреждение культуры города Москвы "Культурный центр "Строгино"</div>
+          <div>ИНН 7734115199/ОГРН 1037734017980</div>
+        </div>
+        <div class="d-flex flex-column fw-medium">
+          <div><span class="fw-bold">Юридический адрес:</span> 123592, г. Москва, вн. тер. г. муниципальный округ Строгино, ул. Маршала Катукова, д. 8</div>
+          <div><span class="fw-bold">Телефон:</span> +7 (495) 750-05-00</div>
+        </div>
+      </div>
+    </div>
+    <!-- phone -->
+    <div class="container container-phone d-flex justify-content-between mt-110 flex-row" style="padding: 51px 116px; background-color: #fff; border-radius: 15px;">
+      <div class="d-flex flex-column gap-20">
+        <div class="fs-30 fw-bold" style="line-height: 50.79px;">По вопросам аренды:</div>
+        <div class="fs-23 fw-medium" style="line-height: 38.94px;">+7 (495) 750-05-00</div>
+      </div>
+      <div class="d-flex flex-column gap-20" style="max-width: 575px; width: 100%;">
+        <div class="fs-30 fw-bold" style="line-height: 42.84px;">По вопросам организации бесплатных/городских мероприятий и кружков:</div>
+        <div class="fs-23 fw-medium" style="line-height: 38.94px;">+7 (495) 750-05-00</div>
+      </div>
+    </div>
+    <!-- streets -->
+    <div class="container container-streets p-0 mt-110 white-color d-flex flex-row" style="gap: 90px;">
+      <div class="fs-30 fw-bold">Адреса:</div>
+      <div class="fs-23 fw-medium d-flex gap-5 flex-row" style="line-height: 38.94px;">
+        <div class="d-flex flex-column gap-4">
+          <a href="#" class="white-color">Маршала Катукова, 8</a>
+          <a href="#" class="white-color">Твардовского, 23к3</a>
+          <a href="#" class="white-color">Строгинский бульвар, 12</a>
+        </div>
+        <div class="d-flex flex-column gap-4">
+          <a href="#" class="white-color">Маршала Катукова, 15к2</a>
+          <a href="#" class="white-color">Маршала Катукова, 9к3</a>
+          <a href="#" class="white-color">Исаковского, 6к1</a>
+        </div>
+      </div>
+    </div>
+    <!-- map -->
+    <div class="container p-0 mt-110">
+      <img src="images/map.png" alt="map" style="width: 100%; height: 100%; object-fit: contain;">
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid mt-110" style="background-color: #eeeeee;">
+      <div class="container container-footer d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="d-flex flex-column gap-20 ">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div style="max-width: 286px;">© 2018 – 2022, Культурный центр «Строгино» – учреждение культуры города Москва</div>
+            <div class="d-flex flex-column">
+              <div class="text-uppercase">мы работаем</div>
+              <div>с 10:00 до 22:00 без выходных</div>
+            </div>
+            <div class="d-flex gap-3">
+              <div>
+                <img src="images/vk-dark.svg" alt="vk">
+              </div>
+              <div>
+                <img src="images/tg-dark.svg" alt="tg">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="about_center.html" class="nav-link">О центре</a>
+            <a href="prostranstva.html" class="nav-link">Пространства</a>
+            <a href="studios.html" class="nav-link">Студии</a>
+            <a href="#" class="nav-link">Афиша</a>
+            <a href="#" class="nav-link">Галерея</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <a href="#" class="nav-link">Оплата на сайте</a>
+          </div>
+          <div class="d-flex flex-column gap-2 show-before-phone">
+            <a href="#" class="nav-link">Документы</a>
+            <a href="#" class="nav-link">Вакансии</a>
+            <a href="#" class="nav-link">Запись к директору</a>
+            <a href="#" class="nav-link">Независимая оценка</a>
+            <a href="#" class="nav-link">Партнеры</a>
+            <a href="#" class="nav-link">Все новости</a>
+            <a href="#" class="nav-link">Аренда помещений</a>
+          </div>
+          <div class="d-flex flex-column justify-content-between form-container" style="gap: 10px;">
+            <div class="text-uppercase fw-semibold fs-18">напишите нам</div>
+            <form class="was-validated" id="myForm">
+              <div class="d-flex flex-column" style="gap: 10px;">
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="name" name="name" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+                <input type="text" class="form-check-input m-0 w-100" style="max-width: 289px;" id="text" name="text" required placeholder="Ваш телефон или email" aria-label="text" aria-describedby="text"/>
+                <textarea name="message" id="message" style="max-width: 289px;" placeholder="Ваше сообщение"></textarea>
+                <div class="d-flex gap-3">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <div class="fw-medium fs-10">Я согласен на обработку моих персональных данных</div>
+                </div> 
+                <button type="submit" class="btn btn-custom fs-6 fw-semibold" style="max-width: 134px; width: 100%;">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex gap-50 show-before-phone">
+          <div class="fs-22 fw-semibold">Наши партнеры</div>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#">
+              <img src="images/ostankino-light.svg" alt="ostankino">
+            </a>
+            <a href="#">
+              <img src="images/pk-light.svg" alt="pushkinskaya karta">
+            </a>
+            <a href="#">
+              <img src="images/dep-cult-light.svg" alt="departament cultura">
+            </a>
+            <a href="#">
+              <img src="images/mos-ru-light.svg" alt="mos-ru">
+            </a>
+            <a href="#">
+              <img src="images/mpc-light.svg" alt="mos-produce-center">
+            </a>
+            <a href="#">
+              <img src="images/mos-razv-light.svg" alt="mos-razvitie">
+            </a>
+            <a href="#">
+              <img src="images/mos-concert-light.svg" alt="mos-concert">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const headerHeight = document.querySelector('.fixed-header').offsetHeight; // Укажите селектор шапки
+    const navbar = document.querySelector('.nav-custom'); // Укажите селектор панели навигации
+
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Проверяем, что скролл ниже шапки
+      if (scrollTop > headerHeight) {
+        if (scrollTop > lastScrollTop) {
+          // Скролл вниз — скрываем панель
+          navbar.style.top = `-${navbar.offsetHeight}px`; // Скрываем, задавая отрицательное значение высоты панели
+        } else {
+          // Скролл вверх — показываем панель
+          navbar.style.top = `${headerHeight}px`; // Задаем отступ в высоту шапки
+        }
+      } else {
+        // Если мы над шапкой, панель всегда будет на своем месте под шапкой
+        navbar.style.top = `${headerHeight}px`;
+      }
+
+      lastScrollTop = scrollTop;
+    });
+
+    document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('myForm').reset();
+    });
+    
+  </script>
+</body>
+</html>
